@@ -1,0 +1,62 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url("./assets/fundo.svg");
+  background-repeat: repeat;
+  height: auto;
+  background-size: cover;
+}
+
+.toupeiras {
+  max-width: 80%;
+  margin: 200px auto;
+
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: space-between;
+}
+
+.toupeira {
+  width: 221.81px;
+  height: 168.11px;
+  background-image: url("./assets/toupeira6.svg");
+
+  cursor: pointer;
+}
+
+.toupeira:hover {
+  animation: loop 1.5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes loop {
+  0% {
+    background-image: url("./assets/toupeira6.svg");
+    transform: translateY(0px);
+  }
+
+  20% {
+    background-image: url("./assets/toupeira5.svg");
+  }
+
+  40% {
+    background-image: url("./assets/toupeira4.svg");
+  }
+
+  60% {
+    background-image: url("./assets/toupeira3.svg");
+  }
+
+  80% {
+    background-image: url("./assets/toupeira2.svg");
+  }
+
+  100% {
+    background-image: url("./assets/toupeira1.svg");
+  }
+}
